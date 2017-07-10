@@ -1,9 +1,23 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, "Home") %>
 
-<button type="button">useless button</button>
 
-<input type="button" onclick="location.href='http://google.com';" value="Go to Google" />
+<!DOCTYPE html> <html>   
+<head>     
 
-<input type="button" onclick="location.href='/static_pages/help';" value="to help!" />
+</head> 
 
+<body> 
+	<h1>StaticPages#home</h1>
+
+	<p>Find me in app/views/static_pages/home.html.erb</p>
+
+	<button type="button">useless button</button>
+
+	<input type="button" onclick="location.href='http://google.com';" value="Go to Google" />
+
+	<input type="button" onclick="location.href='/static_pages/help';" value="to help!" />
+
+	<input type="button" onclick="location.href='/static_pages/contactus';" value="contact us!" > 
+
+</body>
+</html>
