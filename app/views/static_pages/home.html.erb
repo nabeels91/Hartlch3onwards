@@ -7,17 +7,26 @@
 </head> 
 
 <body> 
-	<h1>StaticPages#home</h1>
+	<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
 
-	<p>Find me in app/views/static_pages/home.html.erb</p>
+  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
 
-	<button type="button">useless button</button>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
 
-	<input type="button" onclick="location.href='http://google.com';" value="Go to Google" />
+<!--<a href="#" class="btn btn-lg btn-primary">Sign up now!</a>     this 
+line does the same as <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div> -->
 
-	<input type="button" onclick="location.href='/static_pages/help';" value="to help!" />
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
 
-	<input type="button" onclick="location.href='/static_pages/contactus';" value="contact us!" > 
+	
 
 </body>
 </html>
